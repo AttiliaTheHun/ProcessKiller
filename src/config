@@ -1,0 +1,18 @@
+# ProcessKiller configuration file
+# Do not use spaces if possible
+# Name of the target process (add as many as you want)
+NAME=Notepad.exe
+NAME=javaw.exe
+#NAME=Firefox.exe
+# The name is not absolute, it is sufficient if the name is part of the target process' name
+# For example both lines below will work if target process is `leagueclient.exe`
+# NAME=LeagueClient.exe
+# NAME=League
+# Beware that the below line will kill also `notepad++.exe`
+# NAME=Notepad
+# How often should it check for the processes (in ms)
+INTERVAL=600
+# Whether the program should finish after checking for the processes or continue checking'em infinitely
+AUTOSTOP=false
+# Produces a lot of logging
+DEBUG=false
